@@ -1,0 +1,93 @@
+/*  CSS for styling the maze and game interface */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: #4caf50;
+    color: white;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+
+}
+.footer a{
+    color: white;
+}
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+button,
+select {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+}
+
+button:hover,
+select:hover {
+    background-color: #45a049;
+}
+
+.maze {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cell.wall {
+    background-color: black;
+}
+
+.cell.start {
+    background-color: green;
+}
+
+.cell.end {
+    background-color: red;
+}
+
+.cell.path {
+    background-color: blue;
+}
+
+.cell:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+
+    
+}

@@ -1,0 +1,45 @@
+<!-- main HTML file will be here (stracture of game) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Solver Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Maze Solver</h1>
+      <br />
+      <div class="controls">
+        <label for="difficulty">Choose Difficulty: </label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <label for="algorithm">Choose Algorithm: </label>
+        <select id="algorithm">
+          <option value="bfs">BFS</option>
+          <option value="dfs">DFS</option>
+          <option value="aStar">A*</option>
+        </select>
+
+        <button id="generateMazeBtn">Generate Maze</button>
+        <button id="solveMazeBtn">Solve Maze</button>
+        <button id="resetMazeBtn">Reset</button>
+      </div>
+    </div>
+
+    <div id="maze" class="maze"></div>
+
+    <div class="footer">
+      <h4>
+        Developed by
+        <a href="https://girdharagrawal.netlify.app/">Girdhar Agrawal</a>
+      </h4>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
